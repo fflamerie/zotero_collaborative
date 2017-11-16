@@ -1,2 +1,2 @@
-# zotero_material
-Supports de formation sur Zotero
+# Matériel Zotero
+Supports de formation sur Zotero.
