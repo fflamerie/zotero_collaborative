@@ -1,7 +1,5 @@
 # Partager sa biblio : perfectionnement Zotero
 
-Urfist Bordeaux - 2017-11-21
-
 # Tour de table
 # Rappel des objectifs
 1. Mettre en oeuvre une stratégie de gestion collaborative de sa biblio (références et fichiers)
