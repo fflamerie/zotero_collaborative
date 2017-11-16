@@ -1,5 +1,5 @@
 # Partager sa biblio avec Zotero
-Support de la formation ["Partager sa biblio : perfectionnement Zotero"](https://sygefor.reseau-urfist.fr/#!/training/6877/7396/) à l'Urfist Bordeaux - 2017-11-21.
+Support de la formation ["Partager sa biblio : perfectionnement Zotero"](https://sygefor.reseau-urfist.fr/#!/training/6877/7396/) à l'Urfist Bordeaux le 2017-11-21.
 
 # Descriptif
 ## Objectifs
