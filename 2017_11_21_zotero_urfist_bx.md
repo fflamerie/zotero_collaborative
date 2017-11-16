@@ -23,7 +23,7 @@ Urfist Bordeaux - 2017-11-21
 # Caractériser son projet
 ![travail](img/icone_brico.png)
 - Avez-vous un projet particulier de partage de biblio? Sous quel nom peut-on le désigner pour la durée de la formation (sur les :memo:)?
-- Comment définissez-vous _partager_  dans le contexte de ce projet ? :memo: ** 1**
+- Comment définissez-vous _partager_  dans le contexte de ce projet ? :memo: **1**
   - qui peut **consulter** la biblio partagée?
  - qui peut **modifier** la biblio partagée?
 - Quel est est le contenu de votre biblio? :memo: **2**
