@@ -1,7 +1,10 @@
 # Partager sa biblio avec Zotero
 Support de la formation ["Partager sa biblio : perfectionnement Zotero"](https://sygefor.reseau-urfist.fr/#!/training/6877/7396/) à l'Urfist Bordeaux le 2017-11-21.
+2 versions imprimables du document de cours sont disponibles :
+- version [linéaire](https://github.com/fflamerie/zotero_collaborative/blob/master/2017_11_21_zotero_urfist_bx.pdf),
+- version [diaporama](https://github.com/fflamerie/zotero_collaborative/blob/master/2017_11_21_zotero_urfist_bx_slides.pdf).
 
-# Descriptif
+# Descriptif de la formation
 ## Objectifs
 - Mettre en oeuvre une stratégie de gestion collaborative de sa biblio (références et fichiers)
 - Identifier la solution la plus adaptée à ses besoins : usage récurrent vs usage ponctuel ; utilisateurs Zotero et non utilisateurs Zotero, etc.
