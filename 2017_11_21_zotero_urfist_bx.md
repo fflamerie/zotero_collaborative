@@ -185,13 +185,14 @@ Joker  |  Variable
 `|` joker exclusif
 
 Exemples
-
+<pre>
 `{%a}{-%y}{-%j (%s)}` = Abbott-1990-American Journal of Sociology (AJS)
 si `%j` ou `%s` est vide = Abbott-1990
-
+</pre>
+<pre>
 `{%a-}{%y-}{%s|%j}` = Abbott-1990-AJS
 si `%s` est vide = Abbott-1990-American Journal of Sociology
-
+</pre>
 ![zotfile_parametres_renommage](img/zotfile_pref_renom.png)
 
 ![travail](img/icone_brico.png)
