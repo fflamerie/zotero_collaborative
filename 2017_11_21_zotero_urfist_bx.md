@@ -8,7 +8,7 @@
 # Programme
 1. Caractériser son projet
 2. Créer un compte Zotero
-3. Créer et configurer un compte Zotero adapté à ses besoins
+3. Créer et configurer un groupe Zotero adapté à ses besoins
 4. Paramétrer la synchronisation
 5. Synchronisation des fichiers joints : les différentes options en détails
 6. Organiser la bibliothèque de groupe
