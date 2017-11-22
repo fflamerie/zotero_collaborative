@@ -458,7 +458,7 @@ Si les **signets** autorisent l'édition du document par les utilisateurs de Wor
 - Comment procédez-vous pour envoyer une ou plusieurs références bibliographiques par courriel à un collègue (**non membre de votre groupe Zotero**)?
 - Comment procédez-vous pour envoyer une ou plusieurs références bibliographiques par courriel à un collègue (**membre de votre groupe Zotero**)?
 
-## Non membre de votre groupe
+### Non membre de votre groupe
 Connaissez-vous la _Copie rapide_? Elle se paramètre depuis le menu _Exportation_ des _Préférences_ de Zotero.
 - version _human readable_ : format par défaut = style bibliographique
 - version _machine readable_ : format par défaut = format d'exportation
@@ -469,7 +469,7 @@ La _Copie rapide_ peut être utilisée :
 - avec le menu contextuel clic-droit (moyennant un paramétrage dans Zutilo, voir _infra_).
 
 
-## Membre de votre groupe
+### Membre de votre groupe
 Un membre de votre groupe pourra accéder à la référence depuis la bibliothèque Zotero. Vous pouvez choisir de lui envoyer un [URI](https://fr.wiktionary.org/wiki/URI), correspondant au lien :
 - vers l'élément Zotero dans la bibliothèque en ligne (_i. e._ affichage dans un navigateur ; le lien commence par : `http://zotero.org/`)
 - vers l'élément Zotero dans la bibliothèque local (_i. e._ affichage dans Zotero  ;le lien commence par : `zotero://select`).
@@ -482,3 +482,16 @@ Un format d'exportation `Item URI` pour la _Copie rapide_ a été créé par ada
 - et de redémarrer Zotero.
 
 Plus de détails dans ce billet de blog : adamsmith. (2013, 23 avril). Zotero Item URIs from Client. _The Zoteroist_. Repéré à https://zoteromusings.wordpress.com/2013/04/23/zotero-item-uris-from-client/
+
+## Collections récursives
+Par défaut, les collections ne sont pas récursives,_i. e._ les documents d’une sous-collection n’apparaissent pas dans la collection supérieure. Il s'agit d'un paramètre d'affichage qui peut être activé pour une bibliothèque locale, **mais non pour une bibliothèque en ligne**.
+Ce paramétrage fait partie des préférences cachées, accessibles depuis les _Préférences > Avancées > Editeur de configuration_ :
+- cherchez `extensions.zotero.recursiveCollections`,
+- indiquez la valeur `true`.
+
+Plus de détails : 
+- Page [Hidden preferences](https://www.zotero.org/support/preferences/hidden_preferences) sur le site de Zotero
+- Discussion [Recursive display of all items of a collection and its sub-collections](https://forums.zotero.org/discussion/3317/recursive-display-of-all-items-of-a-collection-and-its-sub-collections) sur le forum Zotero
+
+![edit_config](img/edit_config.png)
+
