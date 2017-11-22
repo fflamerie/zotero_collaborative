@@ -4,6 +4,8 @@ Support de la formation ["Partager sa biblio : perfectionnement Zotero"](https:/
 - version [linéaire](https://github.com/fflamerie/zotero_collaborative/blob/master/2017_11_21_zotero_urfist_bx.pdf),
 - version [diaporama](https://github.com/fflamerie/zotero_collaborative/blob/master/2017_11_21_zotero_urfist_bx_slides.pdf).
 
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/fr/"><img alt="Licence Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/3.0/fr/88x31.png" /></a><br />Les supports sont mis à disposition selon les termes de la <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/fr/">Licence Creative Commons Attribution -  Partage dans les Mêmes Conditions 3.0 France</a>.
+
 # Descriptif de la formation
 ## Objectifs
 - Mettre en oeuvre une stratégie de gestion collaborative de sa biblio (références et fichiers)
