@@ -1,5 +1,7 @@
 # Partager sa biblio : perfectionnement Zotero
 
+Urfist Bordeaux - 2017-11-21
+
 # Tour de table
 # Rappel des objectifs
 1. Mettre en oeuvre une stratégie de gestion collaborative de sa biblio (références et fichiers)
@@ -21,7 +23,7 @@
 # Caractériser son projet
 ![travail](img/icone_brico.png)
 - Avez-vous un projet particulier de partage de biblio? Sous quel nom peut-on le désigner pour la durée de la formation (sur les :memo:)?
-- Comment définissez-vous _partager_  dans le contexte de ce projet ? :memo: **1**
+- Comment définissez-vous _partager_  dans le contexte de ce projet ? :memo: ** 1**
   - qui peut **consulter** la biblio partagée?
  - qui peut **modifier** la biblio partagée?
 - Quel est est le contenu de votre biblio? :memo: **2**
@@ -185,14 +187,13 @@ Joker  |  Variable
 `|` joker exclusif
 
 Exemples
-<pre>
+
 `{%a}{-%y}{-%j (%s)}` = Abbott-1990-American Journal of Sociology (AJS)
 si `%j` ou `%s` est vide = Abbott-1990
-</pre>
-<pre>
+
 `{%a-}{%y-}{%s|%j}` = Abbott-1990-AJS
 si `%s` est vide = Abbott-1990-American Journal of Sociology
-</pre>
+
 ![zotfile_parametres_renommage](img/zotfile_pref_renom.png)
 
 ![travail](img/icone_brico.png)
@@ -468,7 +469,6 @@ La _Copie rapide_ peut être utilisée :
 - avec le clavier : `Ctrl+Maj+C`,
 - avec le menu contextuel clic-droit (moyennant un paramétrage dans Zutilo, voir _infra_).
 
-
 ### Membre de votre groupe
 Un membre de votre groupe pourra accéder à la référence depuis la bibliothèque Zotero. Vous pouvez choisir de lui envoyer un [URI](https://fr.wiktionary.org/wiki/URI), correspondant au lien :
 - vers l'élément Zotero dans la bibliothèque en ligne (_i. e._ affichage dans un navigateur ; le lien commence par : `http://zotero.org/`)
@@ -489,9 +489,26 @@ Ce paramétrage fait partie des préférences cachées, accessibles depuis les _
 - cherchez `extensions.zotero.recursiveCollections`,
 - indiquez la valeur `true`.
 
-Plus de détails : 
 - Page [Hidden preferences](https://www.zotero.org/support/preferences/hidden_preferences) sur le site de Zotero
 - Discussion [Recursive display of all items of a collection and its sub-collections](https://forums.zotero.org/discussion/3317/recursive-display-of-all-items-of-a-collection-and-its-sub-collections) sur le forum Zotero
 
 ![edit_config](img/edit_config.png)
 
+## Quitter un groupe
+Il arrive que l'on arrête de contribuer à un projet, et il convient alors de procéder en 2 étapes pour :
+- quitter le groupe,
+- supprimer la bibliothèque de groupe de ses bibliothèques locales.
+
+### Quitter le groupe
+_NB si vous êtes propriétaire du groupe, vous devrez au préalable en transférer la propriété à un autre membre._
+
+Sur la page d'accueil du groupe sur le site Zotero, le bouton _Leave_ vous permet de quitter le groupe.
+
+![quitter_groupe](img/quitter_groupe.png)
+
+### Supprimer les données locales
+Pour supprimer ensuite la bibliothèque de groupe de vos bibliothèques locales, il suffit de la synchroniser (clic-droit sur la bibliothèque de groupe, puis _Synchroniser_).
+
+![sync_bib_groupe_quitter](img/sync_bib_groupe_quitter.png)
+
+Zotero affiche alors une boîte de dialogue vous proposant de retirer les données locales du groupe.
