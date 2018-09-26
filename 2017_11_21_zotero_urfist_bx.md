@@ -25,9 +25,9 @@ Urfist Bordeaux - 2017-11-21
 # Caractériser son projet
 ![travail](img/icone_brico.png)
 - Avez-vous un projet particulier de partage de biblio? Sous quel nom peut-on le désigner pour la durée de la formation (sur les :memo:)?
-- Comment définissez-vous _partager_  dans le contexte de ce projet ? :memo: **1**
-  - qui peut **consulter** la biblio partagée?
- - qui peut **modifier** la biblio partagée?
+- Comment définissez-vous _partager_  dans le contexte de ce projet ? :memo: **@1**
+   - qui peut **consulter** la biblio partagée?
+  - qui peut **modifier** la biblio partagée?
 - Quel est est le contenu de votre biblio? :memo: **2**
   - références seules?
   - références + fichiers joints?
@@ -52,10 +52,15 @@ Un aperçu des paramètres :
 # Créer et configurer un groupe Zotero adapté à ses besoins
 Le principe de la bibliothèque de groupe : un **espace à part**, distinct de sa bibliothèque personnelle.
 Ajouter le même élément  dans sa bibliothèque personnelle et dans la bibliothèque de groupe = ajouter 2 objets, 2 occurrences distinctes du même élément ; supprimer l'un ne supprime pas l'autre.
+
+Documentation sur le site Zotero : page [Les groupes Zotero](https://www.zotero.org/support/fr/groups)
+
 ## Les types de groupe
 ### _Private_ - groupe privé
 Seuls les membres du groupe peuvent voir les pages du groupe.
+
 Le groupe privé est **caché des recherches de groupe** : il n'apparaît pas dans les résulats des moteurs de recherche.
+
 ### _Public, Closed Membership_ - groupe public, participation restreinte
 La page de présentation du groupe est publique, une **invitation** permet d'être membre du groupe et d'accéder à toutes ses pages.
 Le groupe apparaît dans les résulats des moteurs de recherche, sa bibliothèque peut être publique.
@@ -95,6 +100,10 @@ Créez et paramétrez un groupe associé à votre projet :
 - Donnez-moi le rôle d'administrateur
 
 # Paramétrer la synchronisation
+
+Documentation sur le site Zotero : page [Synchronisation](https://www.zotero.org/support/fr/sync)
+
+
 ![travail](img/icone_brico.png)
 - Synchronisez-vous déjà votre bibliothèque?
 - Quels paramétrages avez-vous mis en place?
@@ -102,10 +111,13 @@ Créez et paramétrez un groupe associé à votre projet :
 - Quelles bonnes pratiques pouvez-vous partager? :memo: **5**
 
 ## Rappel : synchroniser et sauvegarder
-Si la synchronisation vous permet de disposer d'une copie en ligne de votre bibliothèque, elle ne constitue pas pour autant une solution de sauvegarde. Pour sauvegarder correctement vos données Zotero, il est nécessaire de sauvegarder le répertoire `Zotero`.
-La synchronisation ne se substitue en effet pas à la sauvegarde : le serveur Zotero stocke uniquement une copie de la version la plus récente de votre bibliothèque, et cette copie peut être modifiée d'une simple (et éventuellement automatique) synchronisation.
 
-Documentation sur le site Zotero :[ _Backing Up Your Zotero Library_](https://www.zotero.org/support/zotero_data#backing_up_your_zotero_library)
+Documentation sur le site Zotero : page [Le répertoire de données Zotero](https://www.zotero.org/support/fr/zotero_data)
+
+
+Si la synchronisation vous permet de disposer d'une copie en ligne de votre bibliothèque, elle ne constitue pas pour autant une solution de sauvegarde. Pour sauvegarder correctement vos données Zotero, il est nécessaire de sauvegarder le répertoire `Zotero`.
+
+La synchronisation ne se substitue en effet pas à la sauvegarde : le serveur Zotero stocke uniquement une copie de la version la plus récente de votre bibliothèque, et cette copie peut être modifiée d'une simple (et éventuellement automatique) synchronisation.
 
 ## Question 1 : synchroniser tout ou partie de ses bibliothèques?
 Une nouvelle fonctionnalité a été introduite par Zotero v5, la **synchronisation sélective**. Il est ainsi possible de choisir les bibliothèques à synchroniser :
@@ -219,7 +231,7 @@ _- vous pouvez déplacer SANS renommer._
 ## Spécificité des groupes
 Les choix individuels que nous allons détailler ne sont pas forcément applicables pour les groupes.
 - Discussion sur le forum Zotero [Group Sync | Network Storage](https://forums.zotero.org/discussion/comment/98067/)
-- Page du site Zotero [Syncing](https://www.zotero.org/support/sync)
+- Rappel documentation sur le site Zotero : page [Synchronisation](https://www.zotero.org/support/fr/sync)
 
 ## Option 1 : enregistrer les fichiers joints dans le répertoire de données Zotero
 ### Avantages
@@ -344,7 +356,7 @@ Les sources à privilégier, pour enregistrer des références les plus  complè
 - les bases de données bibliographiques,
 - les catalogues de bibliothèque.
 
-La récupération des métadonnées **à partir des identifiants** (DOI, PubMed, ISBN) a une efficacité variable :
+La récupération des métadonnées **à partir des identifiants** (DOI, PubMed, ISBN, arXiv) a une efficacité variable :
 - ISBN : interrogation de WorldCat, tous les livres ne sont pas décrits avec la même précision,
 - DOI : la complétude des métadonnées dépend des métadonnées que l'éditeur associe au DOI.
 Ex : https://doi.org/10.1103/PhysRevLett.119.160401 - Il faudra compléter manuellement la pagination si on ajoute cet article par son DOI.
@@ -353,10 +365,13 @@ Ex : https://doi.org/10.1103/PhysRevLett.119.160401 - Il faudra compléter manue
 
 Peut-on utiliser _Ajouter un document par son identifiant_ pour plusieurs références?
 
-La récupération des métadonnées **à partir des PDF** produit également des résultats aléatoires, car Zotero recherche les métadonnées dans Google Scholar.
->_While this feature can greatly facilitate importing large existing libraries of PDFs, the imported data, especially where Zotero uses Google Scholar, is of lower quality than importing via Web Translator from most scholarly databases._
+Si la version 5.0.36 de Zotero (mars 2018) a apporté un nouveau système de reconnaissance des fichiers PDF optimisant la récupération des métadonnées **à partir des PDF**, cette méthode n'est toutefois pas la plus fiable pour alimenter votre bibliothèque.
 
-Source : page du site Zotero [Retrieve PDF metadata](https://www.zotero.org/support/retrieve_pdf_metadata)
+>_While this feature can greatly facilitate importing large existing libraries of PDFs, **it is not** the best way to add items to your library in general. Items can be imported faster by using the Zotero Connector plugin in your browser from publisher websites or most scholarly databases. This saves several steps versus downloading the PDF manually and adding it to Zotero. The item metadata will also often be higher quality. See [Getting Stuff into your Library](https://www.zotero.org/support/getting_stuff_into_your_library) for the best ways to add items to your library._
+
+Source : Documentation du site Zotero : version en anglais de la page [Récupérer les métadonnées PDF](https://www.zotero.org/support/fr/retrieve_pdf_metadata)
+
+Pour en savoir plus sur la version 5.0.36 de Zotero : Collectif. (2018, 16 mars). Zotero 5.0.36 : du changement pour vos PDF et vos citations [Billet]. _Le blog Zotero francophone_. Repéré à https://zotero.hypotheses.org/1685
 
 ### Organisation des contributions
 1.  Chacun des contributeurs membres du groupe Zotero doit avoir son propre compte Zotero : partager les identifiants d'un même compte posera immanquablement divers problèmes, notamment si les contributeurs qui utilisent le même compte souhaitent synchroniser leur bibliothèque personnelle.
@@ -396,7 +411,7 @@ Comment choisir le format le plus adapté?
 
 S'il s'agit d'importer des éléments depuis une **base de données bibliographiques** (PubMed, par exemple) le format de cette base est le plus adapté, il permettra de réaliser l'import le plus complet.
 
-S'ils 'agit d'importer les éléments depuis la **bibliothèque d'un collègue** utilisant un autre logicile de gestion bibliogrpahique que Zotero, il importe d'effectuer des tests sur une petite quantité d'éléments pour s'assurer que toutes les informations à inclure dans l'import sont bien présentes.
+S'ils 'agit d'importer les éléments depuis la **bibliothèque d'un collègue** utilisant un autre logicile de gestion bibliographique que Zotero, il importe d'effectuer des tests sur une petite quantité d'éléments pour s'assurer que toutes les informations à inclure dans l'import sont bien présentes.
 
 _Les champs non standards et propres à un logiciel ne trouveront pas forcément leur place dans un champ Zotero et pourront être importés en tant que note._
 
@@ -470,6 +485,8 @@ La _Copie rapide_ peut être utilisée :
 - avec la souris : glisser-déposer,
 - avec le clavier : `Ctrl+Maj+C`,
 - avec le menu contextuel clic-droit (moyennant un paramétrage dans Zutilo, voir _infra_).
+
+Documentation sur le site Zotero : page [Créer des bibliographies](https://www.zotero.org/support/fr/creating_bibliographies)
 
 ### Membre de votre groupe
 Un membre de votre groupe pourra accéder à la référence depuis la bibliothèque Zotero. Vous pouvez choisir de lui envoyer un [URI](https://fr.wiktionary.org/wiki/URI), correspondant au lien :
