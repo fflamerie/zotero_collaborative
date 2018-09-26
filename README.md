@@ -1,9 +1,8 @@
 # Partager sa biblio avec Zotero
 Support de la formation ["Partager sa biblio : perfectionnement Zotero"](https://sygefor.reseau-urfist.fr/#!/training/6877/7396/) à l'Urfist Bordeaux le 2017-11-21, 9h-13h.
 Plusieurs versions du support de formation sont disponibles :
-- [version en ligne](https://github.com/fflamerie/zotero_collaborative/blob/master/2017_11_21_zotero_urfist_bx.md),
-- [version PDF linéaire](https://github.com/fflamerie/zotero_collaborative/blob/master/2017_11_21_zotero_urfist_bx.pdf),
-- [version PDF diaporama](https://github.com/fflamerie/zotero_collaborative/blob/master/2017_11_21_zotero_urfist_bx_slides.pdf).
+- [version en ligne](https://github.com/fflamerie/zotero_collaborative/blob/master/2017_11_21_zotero_urfist_bx.md) **mise à jour 2018-09**,
+- [version PDF diaporama](https://github.com/fflamerie/zotero_collaborative/blob/master/2017_11_21_zotero_urfist_bx_slides.pdf) **non mise à jour 2018-09**.
 
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/fr/"><img alt="Licence Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/3.0/fr/88x31.png" /></a><br />Les supports sont mis à disposition selon les termes de la <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/fr/">Licence Creative Commons Attribution -  Partage dans les Mêmes Conditions 3.0 France</a>.
 
