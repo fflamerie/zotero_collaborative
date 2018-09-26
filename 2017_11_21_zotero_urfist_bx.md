@@ -29,11 +29,11 @@ Urfist Bordeaux - 2017-11-21
   - qui peut **consulter** la biblio partagée?
  - qui peut **modifier** la biblio partagée?
 - Quel est est le contenu de votre biblio? :memo: **2**
- - références seules?
- - références + fichiers joints?
+  - références seules?
+  - références + fichiers joints?
 - Ce projet va-t-il donner lieu à des productions? :memo: **3**
- - de quel type (bibliographie, article, etc.)?
- - quel outil allez-vous utiliser (Word, LaTeX, etc.)?
+  - de quel type (bibliographie, article, etc.)?
+  - quel outil allez-vous utiliser (Word, LaTeX, etc.)?
 
 # Créer un compte Zotero
 La création d'un compte Zotero n'est pas obligatoire pour utiliser Zotero : vous pouvez installer Zotero sur tous vos ordinateurs sans avoir de compte Zotero. Le compte Zotero est nécessaire si vous souhaitez :
