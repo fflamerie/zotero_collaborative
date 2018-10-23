@@ -10,7 +10,7 @@ Plusieurs versions du support de formation sont disponibles :
 ## Objectifs
 - Mettre en oeuvre une stratégie de gestion collaborative de sa biblio (références et fichiers)
 - Identifier la solution la plus adaptée à ses besoins : usage récurrent vs usage ponctuel ; utilisateurs Zotero et non utilisateurs Zotero, etc.
-- Se munir des identifiants de compte Zotero ou se créer son compte AVANT la formation : Site web Zotero
+- Se munir des identifiants de compte Zotero ou se créer son compte AVANT la formation : [créer un compte sur le site web Zotero](https://www.zotero.org/user/register)
 
 ## Programme
 L'objectif de ce stage est de permettre à des personnes utilisant déjà Zotero de partager leurs références comme leurs fichiers avec d'autres personnes, que ces dernières utilisent ou non Zotero.
