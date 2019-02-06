@@ -387,7 +387,7 @@ Si vous rédigez un document collaboratif, il est donc impératif que **toutes l
 
 >J'encouragerais juste fortement chacun à ajouter les éléments au groupe avant de les citer, et à s'assurer qu'il cite l'élément du groupe [et non celui de sa bibliothèque personnelle]. C'est la solution la plus robuste.
 
->Comme vous le savez sans doute, il _est_ possible de travailler dans un document avec des éléments insérés depuis plusieurs bibliothèques personnelles. Toutefois seul la personne qui a inséré la citation peut modifier les données bibliographiques qui lui sont liées, et il faut aussi faire attention à ne pas créer de doublons (_i. e._ la même référence insérée depuis différentes bibliothèques)..
+>Comme vous le savez sans doute, il _est_ possible de travailler dans un document avec des éléments insérés depuis plusieurs bibliothèques personnelles. Toutefois seul la personne qui a inséré la citation peut modifier les données bibliographiques qui lui sont liées, et il faut aussi faire attention à ne pas créer de doublons (_i. e._ la même référence insérée depuis différentes bibliothèques).
 
 Source : Discussion du forum Zotero [Add all references in shared Word document to shared library](https://forums.zotero.org/discussion/55957/add-all-references-in-shared-word-document-to-shared-library) - réponse d'adamsmith.
 
