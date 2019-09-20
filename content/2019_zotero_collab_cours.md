@@ -67,7 +67,7 @@ Si la synchronisation des données bibliographiques est très facile à paramét
 ### Fonctionnement par défaut
 Comme cela est détaillé dans [la page "Ajouter des fichiers à votre bibliothèque Zotero" de la documentation Zotero](https://www.zotero.org/support/fr/attaching_files), Zotero enregistre par défaut les fichiers joints dans son répertoire de données`Zotero`, dans un sous-répertoire `storage`. À l'intérieur de ce sous-répertoire `storage`, un nouveau répertoire au nom aléatoire est créé pour chaque pièce jointe.
 
-![zotero_storage](img/zotero_storage.png)
+![zotero_storage](img/zfrancophone_zotfile_zotero_storage.png)
 
 ### Zotfile?
 Zotfile est un module complémentaire de Zotero développé par l'un de ses utilisateurs, [Joscha Legewie](https://github.com/jlegewie).
@@ -145,39 +145,9 @@ Discussions sur le forum Zotero :
 * [Groups + Zotfile + Cloud attachments - doable?](https://forums.zotero.org/discussion/63237/groups-zotfile-cloud-attachments-doable)
 * [How attach links to files using "link to URI" (in groups, zotero5)](https://forums.zotero.org/discussion/68075/how-attach-links-to-files-using-link-to-uri-in-groups-zotero5)
 
-### Avantages
-* accès aux fichiers indépendamment de Zotero
-* permet d'utiliser Dropbox pour synchroniser les fichiers joints
+L'utilisation de ZotFile est vivement conseillé pour automatiser et fiabiliser à la fois l'enregistrement des fichiers et l'accès à ces fichiers depuis vos bibliothèques Zotero.
 
-### Inconvénients
-* pas d'indexation du contenu des pièces jointes
-* suppression des PDF doublon moins simple
-* paramétrage et gestions des chemins relatifs
-
-### Configuration
-Gérer vos fichiers joints avec Zotfile vous permet de les enregistrer à l'emplacement de votre choix, dans des sous-répertoires signifiants (par année par exemple), et de les exploiter ainsi indépendamment de Zotero plus facilement.
-Les données bibliographiques sont synchronisées par le serveur Zotero, mais il faut recourir à un serveur tiers pour les fichiers joints, Dropbox par exemple.
-Cette option impose de veiller à **assurer la validité des liens** entre les éléments Zotero et les fichiers joints sur tous les ordinateurs synchronisés. Pour ce faire, vous devez :
-
-* garder le même chemin sur tous les ordinateurs,
-* ou utiliser des **chemins relatifs** gérés par Zotero.
-
-Les chemins relatifs sont paramétrables dans les _Préférences_ de Zotero, en définissant un répertoire de base pour les fichiers joints.
-
-Dans l'exmple suivant, le répertoire de base est `C:\PDF`.
-
-![pref_chemins_relatifs](img/pref_chemins_relatifs.png)
-
-
-**Le répertoire de base doit être le même que celui défini dans Zotfile.**
-
-Si votre configuration de Zotfile implique la création de sous-répertoires, veillez à utiliser la **même arborescence** sur tous les ordinateurs que vous souhaitez synchroniser : la structure des répertoires à l'intérieur du répertoire de base doit être la même sur tous les ordinateurs.
-
-![chemins_relatifs](img/schema_chemins_rel.png)
-
-En savoir plus sur les chemins relatifs dans Zotero :
-
-adam3smith. (2013, 11 avril). What’s New in Zotero 4.0 - Part 2. _The Zoteroist_. Repéré à https://zoteromusings.wordpress.com/2013/04/11/whats-new-in-zotero-4-0-part-2/.
+Les avantages et inconvénients de cette option, ainsi que les paramétrages dans Zotero et ZotFile nécessaires à son fonctionnement, sont détaillés dans [le billet "ZotFile : un outil pour gérer vos PDF" sur le blog Zotero francophone](https://zotero.hypotheses.org/2838)
 
 # 6. Organiser la bibliothèque de groupe
 
