@@ -65,92 +65,23 @@ Si la synchronisation des données bibliographiques est très facile à paramét
 ## Rappel : gestion des fichiers joints dans Zotero
 
 ### Fonctionnement par défaut
-Par défaut, Zotero enregistre les fichiers joints dans le répertoire de données `Zotero`, dans un sous-répertoire `storage`.
-A l'intérieur de ce sous-répertoire `storage`, un nouveau répertoire au nom aléatoire est créé pour chaque pièce jointe.
+Comme cela est détaillé dans [la page "Ajouter des fichiers à votre bibliothèque Zotero" de la documentation Zotero](https://www.zotero.org/support/fr/attaching_files), Zotero enregistre par défaut les fichiers joints dans son répertoire de données`Zotero`, dans un sous-répertoire `storage`. À l'intérieur de ce sous-répertoire `storage`, un nouveau répertoire au nom aléatoire est créé pour chaque pièce jointe.
 
 ![zotero_storage](img/zotero_storage.png)
 
 ### Zotfile?
-Zotfile est un module complémentaire de Zotero développé par l'un de ses utilisateurs, Joscha Legewie.
-Voici ses principales caractéristiques.
-* Faciliter la **gestion des fichiers joints** :
-  * attachement du dernier fichier téléchargé,
-  * renommage **automatique** et **intelligent** des fichiers,
-  * enregistrement des fichiers dans un répertoire déterminé (en dehors du répertoire `Zotero\storage`).
-* Synchroniser les fichiers avec un iPad ou une **tablette**. _hors périmètre de la formation_
-* Extraire les **annotations** d’un fichier joint prises sur un iPad ou une tablette et les intégrer dans une note. _hors périmètre de la formation_
+Zotfile est un module complémentaire de Zotero développé par l'un de ses utilisateurs, [Joscha Legewie](https://github.com/jlegewie).
 
-Voir :
+Il facilite la **gestion des fichiers joints** grâce aux fonctionnalités suivantes :
 
-* [Site de ZotFile](http://zotfile.com/)
-* [ZotFile sur le forum Zotero](http://forums.zotero.org/discussion/5301/1/zotfile-zotero-plugin-to-rename-move-and-attach-pdfs-send-them-to-iPad-extract-pdf-annotations/)
+* renommage automatique et intelligent des fichiers,
+* attachement du fichier le plus récemment modifié dans un répertoire déterminé,
+* enregistrement des fichiers dans un répertoire déterminé, en dehors du répertoire `Zotero\storage`.
 
-#### Paramètres généraux
-Pour exploiter ses PDF en dehors de Zotero, on peut paramétrer leur **enregistrement automatique dans un répertoire** déterminé à l'emplacement de son choix : un lien vers le fichier est alors créé dans l'élément Zotero.
-
-Pour déplacer des fichiers joints déjà enregistrés dans Zotero, il suffit de lancer le **batch de traitement** : sélectionner l'ensemble des éléments de la bibliothèque, puis _clic-droit > Gérer les pièces jointes > Renommer les pièces jointes_. Cette commande renommera et/ou déplacera les fichiers.
-
-Le **vocabulaire** applicable pour définir les sous-répertoires est le même que celui utilisé pour le renommage, à l'exception du joker `%c`, qui ne peut être utilisé que pour déplacer des fichiers et non les renommer.
-
-_Si vous choisissez une option automatique, n'intervenez pas manuellement dans le nommage ni l'emplacement des répertoires et des fichiers! Déplacer, renommer les répertoires, les sous-répertoires ou les fichiers conduirait à rompre les liens entre les fichiers joints et les éléments dans Zotero._
-
-![zotfile_parametres_generaux](img/zotfile_pref_dossier.png)
-
-#### Règles de renommage
-##### Vocabulaire
-Joker  |  Variable
---|--
-  `%a`|   **noms des auteurs**
-`%I` | initiales de l’auteur
-`%F` | nom de l’auteur et 1ère lettre de son prénom (i.e. EinsteinA)
-`%A` |  1ère lettre de l’auteur
-`%y` |  **année** (extraite du champ date)
-`%t` |  **titre**
-`%T` | **type de document**
-`%h` | titre abrégé
-`%j`|  titre de la revue
-`%p` | nom de l’éditeur
-`%w` | titre de la revue ou nom de l’éditeur
-`%s` | titre de la revue abrégé
-`%v`|  volume
-`%e` | numéro
-`%f`|  pagination
-`%n` | numéro de brevet (que pour les brevets)
-`%i` | détenteurs (que pour les brevets)
-`%u`|  date de publication (que pour les brevets)
-`%c` | **collection** (uniquement pour les sous-répertoires, non pour renommer les fichiers). Si un élément est classé dans plusieurs collections, l’utilisateur choisira celle à utiliser pour le classement du fichier.
-
-##### Syntaxe
-`{…}` groupe optionnel
-
-`|` joker exclusif
-
-Exemples
-
-`{%a}{-%y}{-%j (%s)}` = Abbott-1990-American Journal of Sociology (AJS)
-si `%j` ou `%s` est vide = Abbott-1990
-
-`{%a-}{%y-}{%s|%j}` = Abbott-1990-AJS
-si `%s` est vide = Abbott-1990-American Journal of Sociology
-
-![zotfile_parametres_renommage](img/zotfile_pref_renom.png)
+Un article détaillé lui est consacré : [lire le billet "ZotFile : un outil pour gérer vos PDF" sur le blog Zotero francophone](https://zotero.hypotheses.org/2838).
 
 ![travail](img/icone_collab_bleu.png)
 **Exercice 3 : installez et paramétrez ZotFile**
-
-
-#### Paramètres des tablettes
-Paramétrage de la **synchronisation** des fichiers joints et des annotations.
-
-#### Paramètres avancés
-* Options des **annotations**
-* Options de **renommage** et de **déplacement** : **types de pièce jointe à traiter** (formats de fichier), traitement systématique ou affichage d'une demande de confirmation, suppression des caractères spéciaux dans les noms de fichier, etc.
-
-_Les fonctionnalités de renommage et de déplacement des fichiers de ZotFile sont indépendantes :_
-
-* _vous pouvez déplacer ET renommer,_
-* _vous pouvez renommer SANS déplacer,_
-* _vous pouvez déplacer SANS renommer._
 
 # 5. Synchroniser les fichiers joints : les différentes options en détails
 ## Spécificité des groupes
