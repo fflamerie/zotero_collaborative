@@ -1,14 +1,67 @@
 
 # Partager sa biblio : perfectionnement Zotero
 
+## Sommaire
 
-# 1. Caractériser son projet
+<!-- MDTOC maxdepth:3 firsth1:0 numbering:0 flatten:0 bullets:1 updateOnSave:1 -->
+
+- [Sommaire](#sommaire)   
+- [1. Caractériser son projet](#1-caractériser-son-projet)   
+- [2. Créer un compte Zotero](#2-créer-un-compte-zotero)   
+- [3. Créer et configurer un groupe Zotero adapté à ses besoins](#3-créer-et-configurer-un-groupe-zotero-adapté-à-ses-besoins)   
+- [4. Paramétrer la synchronisation et gérer les fichiers joints](#4-paramétrer-la-synchronisation-et-gérer-les-fichiers-joints)   
+   - [Rappel sur la synchronisation et la sauvegarde](#rappel-sur-la-synchronisation-et-la-sauvegarde)   
+   - [Question 1, synchroniser tout ou partie de ses bibliothèques?](#question-1-synchroniser-tout-ou-partie-de-ses-bibliothèques)   
+   - [Question 2, synchroniser les fichiers joints?](#question-2-synchroniser-les-fichiers-joints)   
+   - [Rappel sur la gestion des fichiers joints dans Zotero](#rappel-sur-la-gestion-des-fichiers-joints-dans-zotero)   
+      - [Fonctionnement par défaut](#fonctionnement-par-défaut)   
+      - [ZotFile?](#zotfile)   
+- [5. Synchroniser les fichiers joints, les différentes options en détails](#5-synchroniser-les-fichiers-joints-les-différentes-options-en-détails)   
+   - [Spécificité des groupes](#spécificité-des-groupes)   
+   - [Option 1, enregistrer les fichiers joints dans le répertoire de données Zotero](#option-1-enregistrer-les-fichiers-joints-dans-le-répertoire-de-données-zotero)   
+      - [Avantages](#avantages)   
+      - [Inconvénients](#inconvénients)   
+      - [Option 1.0 Dropbox](#option-10-dropbox)   
+      - [Option 1.1 Zotero](#option-11-zotero)   
+      - [Option 1.2 Serveur WebDAV tiers](#option-12-serveur-webdav-tiers)   
+      - [Option 1.3 Autre service](#option-13-autre-service)   
+   - [Option 2, enregistrer les fichiers joints dans un répertoire de données en-dehors du répertoire Zotero](#option-2-enregistrer-les-fichiers-joints-dans-un-répertoire-de-données-en-dehors-du-répertoire-zotero)   
+- [6. Organiser la bibliothèque de groupe](#6-organiser-la-bibliothèque-de-groupe)   
+   - [Définir les règles de gestion des fichiers joints si applicable](#définir-les-règles-de-gestion-des-fichiers-joints-si-applicable)   
+   - [Déterminer et documenter un usage commun des outils d'organisation de la bibliothèque](#déterminer-et-documenter-un-usage-commun-des-outils-dorganisation-de-la-bibliothèque)   
+- [7. Alimenter la bibliothèque de groupe](#7-alimenter-la-bibliothèque-de-groupe)   
+   - [Alimenter la bibliothèque entre utilisateurs Zotero](#alimenter-la-bibliothèque-entre-utilisateurs-zotero)   
+      - [Rappel sur les modes d'alimentation d'une bibliothèque Zotero](#rappel-sur-les-modes-dalimentation-dune-bibliothèque-zotero)   
+      - [Organisation des contributions](#organisation-des-contributions)   
+      - [Travail collectif sur la qualité des données (complétude, exactitude)](#travail-collectif-sur-la-qualité-des-données-complétude-exactitude)   
+   - [Alimenter la bibliothèque avec des non utilisateurs Zotero](#alimenter-la-bibliothèque-avec-des-non-utilisateurs-zotero)   
+      - [Espace en ligne](#espace-en-ligne)   
+      - [Importer des fichiers bibliographiques](#importer-des-fichiers-bibliographiques)   
+      - [Exporter](#exporter)   
+      - [Modifier les champs exportés en CSV](#modifier-les-champs-exportés-en-csv)   
+- [8. Exploiter la bibliothèque de groupe pour la rédaction collaborative d'un document](#8-exploiter-la-bibliothèque-de-groupe-pour-la-rédaction-collaborative-dun-document)   
+   - [Traitement de texte](#traitement-de-texte)   
+      - [Lien document Word/bibliothèque Zotero](#lien-document-wordbibliothèque-zotero)   
+      - [Champs ou signets?](#champs-ou-signets)   
+- [9. Miscellannées](#9-miscellannées)   
+   - [Communiquer](#communiquer)   
+      - [Non membre de votre groupe](#non-membre-de-votre-groupe)   
+      - [Membre de votre groupe](#membre-de-votre-groupe)   
+   - [Quitter un groupe](#quitter-un-groupe)   
+      - [Quitter le groupe](#quitter-le-groupe)   
+      - [Supprimer les données locales](#supprimer-les-données-locales)   
+
+<!-- /MDTOC -->
+
+<div style="page-break-after: always;"></div>
+
+## 1. Caractériser son projet
 
 ![travail](img/icone_collab_bleu.png)
 **Exercice 1 : caractérisez votre projet**
 
 
-# 2. Créer un compte Zotero
+## 2. Créer un compte Zotero
 La création d'un compte Zotero n'est pas obligatoire pour utiliser Zotero : vous pouvez installer Zotero sur tous vos ordinateurs sans avoir de compte Zotero. Le compte Zotero est nécessaire si vous souhaitez :
 
 * **synchroniser** votre bibliothèque entre plusieurs ordinateurs,
@@ -23,7 +76,7 @@ Voici un aperçu des paramètres.
 * [Settings > Privacy](https://www.zotero.org/settings/privacy) : l'item _Publish entire library_ , décoché par défaut, rend votre bibliothèque lisible par tous sur Internet. Pourquoi ne pas utiliser cette simple option pour partager de la biblio? La visibilité n'est sélective ni en termes de **contenu** (c'est toute la bibliothèque ou rien), ni en termes de **périmètre d'accès** (c'est tout le monde ou personne), ni en termes d'**action** (les autres peuvent seulement lire et non modifier).
 * [Settings > Storage](https://www.zotero.org/settings/storage) : outre l'option _Purge Storage_ qui vous permet de libérer votre espace de stockage en ligne de fichiers joints synchronisés à tort, ce menu vous permet d'acquérir de l'espace de stockage supplémentaire.
 
-# 3. Créer et configurer un groupe Zotero adapté à ses besoins
+## 3. Créer et configurer un groupe Zotero adapté à ses besoins
 Un groupe Zotero constitue un **espace à part**, distinct de sa bibliothèque personnelle.
 Ajouter le même élément  dans sa bibliothèque personnelle et dans la bibliothèque de groupe revient à ajouter 2 objets, 2 occurrences distinctes du même élément ; supprimer l'un ne supprime pas l'autre.
 
@@ -33,11 +86,11 @@ Ajouter le même élément  dans sa bibliothèque personnelle et dans la bibliot
 ![travail](img/icone_collab_bleu.png)
 **Exercice 2 : créez et paramétrez un groupe associé à votre projet**
 
-# 4. Paramétrer la synchronisation et gérer les fichiers joints
+## 4. Paramétrer la synchronisation et gérer les fichiers joints
 
 ![zotero](img/icone_zotero.png)[Documentation Zotero : Synchronisation](https://www.zotero.org/support/fr/sync)
 
-## Rappel : synchroniser et sauvegarder
+### Rappel sur la synchronisation et la sauvegarde
 
 ![zotero](img/icone_zotero.png)[Documentation Zotero : Le répertoire de données Zotero](https://www.zotero.org/support/fr/zotero_data)
 
@@ -46,14 +99,14 @@ Si la synchronisation vous permet de disposer d'une copie en ligne de votre bibl
 
 La synchronisation ne se substitue en effet pas à la sauvegarde : le serveur Zotero stocke uniquement une copie de la version la plus récente de votre bibliothèque, et cette copie peut être modifiée d'une simple (et éventuellement automatique) synchronisation.
 
-## Question 1 : synchroniser tout ou partie de ses bibliothèques?
+### Question 1, synchroniser tout ou partie de ses bibliothèques?
 Une nouvelle fonctionnalité a été introduite par Zotero v5, la **synchronisation sélective**. Il est ainsi possible de choisir les bibliothèques à synchroniser :
 
 * toutes ses bibliothèques,
 * seulement sa bibliothèque personnelle
 * seulement tout ou partie de ses bibliothèques de groupe.
 
-## Question 2 : synchroniser les fichiers joints?
+### Question 2, synchroniser les fichiers joints?
 **Synchroniser ou non les fichiers joints va avoir un impact sur les modes de gestion de vos fichiers joints, et réciproquement.**
 
 Si la synchronisation des données bibliographiques est très facile à paramétrer, celle des PDF et autres fichiers joints peut se révéler moins triviale. L'espace de stockage sur le serveur Zotero associé à chaque compte est en effet limité à **300 Mo** :  cette limite peut rapidement s'avérer insuffisante dès lors que l'on souhaite synchroniser des références bibliographiques ET des fichiers joints. Plusieurs options se présentent, correspondant à différents modes et choix de fonctionnement. En voici une première présentation succincte, nous les détaillerons ensuite.
@@ -62,14 +115,14 @@ Si la synchronisation des données bibliographiques est très facile à paramét
 * **Utiliser un serveur tiers pour les fichiers joints** : le coût financier peut être nul, mais l'organisation mise en place dépend alors des conditions d'utilisation du service choisi.
 * **Ne pas synchroniser les fichiers joints**, voire ne pas synchroniser la bibliothèque : différentes méthodes permettent de transporter tout ou partie de sa bibliothèque aisément, sans recourir à un serveur en ligne.
 
-## Rappel : gestion des fichiers joints dans Zotero
+### Rappel sur la gestion des fichiers joints dans Zotero
 
-### Fonctionnement par défaut
+#### Fonctionnement par défaut
 Comme cela est détaillé dans [la page "Ajouter des fichiers à votre bibliothèque Zotero" de la documentation Zotero](https://www.zotero.org/support/fr/attaching_files), Zotero enregistre par défaut les fichiers joints dans son répertoire de données`Zotero`, dans un sous-répertoire `storage`. À l'intérieur de ce sous-répertoire `storage`, un nouveau répertoire au nom aléatoire est créé pour chaque pièce jointe.
 
 ![zotero_storage](img/zfrancophone_zotfile_zotero_storage.png)
 
-### Zotfile?
+#### ZotFile?
 Zotfile est un module complémentaire de Zotero développé par l'un de ses utilisateurs, [Joscha Legewie](https://github.com/jlegewie).
 
 Il facilite la **gestion des fichiers joints** grâce aux fonctionnalités suivantes :
@@ -83,15 +136,15 @@ Un article détaillé lui est consacré : [lire le billet "ZotFile : un outil po
 ![travail](img/icone_collab_bleu.png)
 **Exercice 3 : installez et paramétrez ZotFile**
 
-# 5. Synchroniser les fichiers joints : les différentes options en détails
-## Spécificité des groupes
+## 5. Synchroniser les fichiers joints, les différentes options en détails
+### Spécificité des groupes
 Les choix individuels que nous allons détailler ne sont pas forcément applicables pour les groupes.
 
 * Discussion sur le forum Zotero [Group Sync | Network Storage](https://forums.zotero.org/discussion/comment/98067/)
 * Rappel ![zotero](img/icone_zotero.png)[Documentation Zotero : Synchronisation](https://www.zotero.org/support/fr/sync)
 
-## Option 1 : enregistrer les fichiers joints dans le répertoire de données Zotero
-### Avantages
+### Option 1, enregistrer les fichiers joints dans le répertoire de données Zotero
+#### Avantages
 * paramétrage minimal
 * pas de risque de rupture de lien entre le élément Zotero et le fichier joint
 * indexation du contenu des pièces jointes
@@ -99,17 +152,17 @@ Les choix individuels que nous allons détailler ne sont pas forcément applicab
 * synchronisation sélective
 * stabilité du service
 
-### Inconvénients
+#### Inconvénients
 * fichiers difficilement accessibles sans utiliser Zotero...
 * ... mais Zotero ne constitue-t-il pas un bon outil de navigation dans vos fichiers?
 * ne permet pas de synchroniser vos fichiers joints si vous voulez utiliser Dropbox pour ce faire.
 
-### Option 1.0 Dropbox
+#### Option 1.0 Dropbox
 Une fausse bonne idée vous a peut-être traversé l'esprit : déplacer le répertoire `Zotero` en entier dans votre répertoire Dropbox pour tout synchroniser (les données bibliographiques et les fichiers joints) en même temps. Vous risquez en effet d'endommager irrémédiablement votre base de données, comme cela est expliqué en détails dans le fil de discussion [_Using Dropbox and want to move Zotero Data to it_](https://forums.zotero.org/discussion/25050/using-Dropbox-and-want-to-move-zotero-data-to-it) du forum Zotero, et sur le site [ZotPad](http://zotpad.uservoice.com/knowledgebase/articles/103395-what-is-a-symbolic-link-and-why-should-i-use-one-w).
 
 Si vous souhaitez gérer vos PDF dans Zotero, privilégiez l'une des 3 options présentées _infra_. Si vous souhaitez utiliser Dropbox, il est préférable de gérer vos PDF avec Zotfile et suivre les indications de de l'option 2.
 
-### Option 1.1 Zotero
+#### Option 1.1 Zotero
 
 **C'est la seule option possible pour synchroniser les pièces jointes d'une bibliothèque de groupe.**
 
@@ -117,7 +170,7 @@ Outre le choix de la ou des bibliothèques à synchroniser, vous pouvez paramét
 
 Dans le cas d'une bibliothèque de groupe, cela laisse la possibilité aux membres du groupe de ne télécharger qu'une partie des fichiers joints.
 
-### Option 1.2 Serveur WebDAV tiers
+#### Option 1.2 Serveur WebDAV tiers
 
 **Cette option ne peut pas être utilisée pour une bibliothèque de groupe.**
 
@@ -130,14 +183,14 @@ Une fois paramétré le service que vous avez choisi, il suffit d'indiquer dans 
 
 Si certaines universités comme Aix-Marseille et son [AMUbox](https://hs.hypotheses.org/460) offrent à leurs membres un espace WebDav utilisable pour la synchronisation des fichiers joints de bibliothèques personnelles, le recours à cette option s'avère impossible pour une bibliothèque de groupe, comme cela est détaillé notamment dans  la discussion du forum Zotero [Saving group libraries on a WebDAV server](https://forums.zotero.org/discussion/34481/saving-group-libraries-on-a-webdav-server).
 
-### Option 1.3 Autre service
+#### Option 1.3 Autre service
 
 **Cette option ne peut pas être utilisée pour une bibliothèque de groupe.**
 
 Une dernière option s'offre à vous : utiliser un serveur tiers n'utilisant pas le protocole WebDAV, à partir du moment où il vous permet de synchroniqer uniquement le répertoire `storage` à l'intérieur du répertoire `Zotero`. Synchroniser l'ensemble du répertoire `Zotero` est en effet une très mauvaise idée, comme détaillé _supra_ dans l'option 1.0.
 Des services tels que [SpiderOak](https://spideroak.com) vous permettent de **sélectionner les répertoires à synchroniser à l'intérieur d'une arborescence**. SpiderOak garantit en outre **l'encryptage** de vos données.
 
-## Option 2 : enregistrer les fichiers joints dans un répertoire de données en-dehors du répertoire Zotero
+### Option 2, enregistrer les fichiers joints dans un répertoire de données en-dehors du répertoire Zotero
 
 **Cette option ne peut pas être utilisée pour une bibliothèque de groupe.**
 
@@ -149,16 +202,16 @@ L'utilisation de ZotFile est vivement conseillé pour automatiser et fiabiliser 
 
 Les avantages et inconvénients de cette option, ainsi que les paramétrages dans Zotero et ZotFile nécessaires à son fonctionnement, sont détaillés dans [le billet "ZotFile : un outil pour gérer vos PDF" sur le blog Zotero francophone](https://zotero.hypotheses.org/2838)
 
-# 6. Organiser la bibliothèque de groupe
+## 6. Organiser la bibliothèque de groupe
 
-## Définir les règles de gestion des fichiers joints si applicable
+### Définir les règles de gestion des fichiers joints si applicable
 Ces règles peuvent recouvrir notamment les aspects suivants.
 
 * Quels types de fichier enregistre-t-on dans la bibliothèque? Limite-t-on les formats de fichier acceptés? _Cela relève de la bonne pratique et ne peut pas faire l'objet d'un paramétrage automatique contraignant._
 * Quelles règles de nommage définit-on? L'utilisation de Zotfile (paramétré de la même façon par tous les membres du groupe) facilite l'adoption et l'application d'un schéma commun.
 *  Qui a le droit d'éditer les fichiers? Seulement les administrateurs? Ou tous les membres du groupe?
 
-## Déterminer et documenter un usage commun des outils d'organisation de la bibliothèque
+### Déterminer et documenter un usage commun des outils d'organisation de la bibliothèque
 
 De même que pour le nommage des fichiers, des règles d'organisation communes minimales permettront à votre bibliothèque de conserver sa cohérence et d'être plus aisément utilisable par tous les contributeurs. Que vous soyez adeptes des marqueurs, des collections ou des recherches enregistrées  - voir le billet du blog Zotero francophone [Comment organiser sa bibliothèque?](http://zotero.hypotheses.org/756) -, le plus important demeure d'**expliciter** et de **documenter** vos choix d'organisation, afin que chacun puisse se les approprier et surtout les appliquer.
 
@@ -188,10 +241,10 @@ Enfin, n'oubliez pas que les collections, les marqueurs et les recherches enregi
 ![travail](img/icone_collab_bleu.png)
 **Exercice 4 : créez le mode d'emploi de votre bibliothèque**
 
-# 7. Alimenter la bibliothèque de groupe
-## Alimenter la bibliothèque entre utilisateurs Zotero
+## 7. Alimenter la bibliothèque de groupe
+### Alimenter la bibliothèque entre utilisateurs Zotero
 
-### Rappel sur les modes d'alimentation d'une bibliothèque Zotero
+#### Rappel sur les modes d'alimentation d'une bibliothèque Zotero
 Les sources à privilégier pour enregistrer des références les plus complètes possibles sont notamment :
 
 * les sites des éditeurs,
@@ -215,12 +268,12 @@ Pour en savoir plus sur la version 5.0.36 de Zotero :
 
 Collectif. (2018, 16 mars). Zotero 5.0.36 : du changement pour vos PDF et vos citations [Billet]. _Le blog Zotero francophone_. Repéré à https://zotero.hypotheses.org/1685
 
-### Organisation des contributions
+#### Organisation des contributions
 1.  Chacun des contributeurs membres du groupe Zotero doit avoir son propre compte Zotero : partager les identifiants d'un même compte posera immanquablement divers problèmes, notamment si les contributeurs qui utilisent le même compte souhaitent synchroniser leur bibliothèque personnelle.
 
 2.  Déterminez **votre méthode d'alimentation** de la bibliothèque de groupe. Certains préfèrent enregistrer d'abord les éléments dans leur bibliothèque personnelle pour ajouter le texte intégral, les mots clés, etc. D'autres au contraire préfèreront conserver distinctes les deux bibliothèques et enregistreront directement les éléments à partager dans la bibliothèque du groupe.
 
-### Travail collectif sur la qualité des données (complétude, exactitude)
+#### Travail collectif sur la qualité des données (complétude, exactitude)
 1. Quelle que soit la méthode d'alimentation que vous adoptez, veillez à **corriger et compléter** si nécessaire les références bibliographiques ; Zotero peut vous aider pour certaines petites corrections, comme nous l'avons détaillé dans le billet du blog Zotero [Nettoyer les références collectées, quelques astuces](http://zotero.hypotheses.org/760).
 
 2. Ne négligez pas la fonction **_Connexe_**, qui vous permet de lier plusieurs éléments Zotero entre eux. _Connexe_ relie ainsi les différentes versions d'une même oeuvre, les figures de l'article dans lequel elles sont insérées, etc. Dans le cadre d'un travail collaboratif, il indiquera surtout aux autres contributeurs les relations que vous avez établies entre différents éléments.
@@ -232,8 +285,8 @@ Le module complémentaire [Zutilo](https://github.com/willsALMANJ/Zutilo) vous a
 * copier-coller tous les marqueurs d'un élément pour les assigner à d'autres éléments,
 * créer rapidement un lien _Connexe_ entre des éléments sélectionnés (menu du clic droit).
 
-## Alimenter la bibliothèque avec des non utilisateurs Zotero
-### Espace en ligne
+### Alimenter la bibliothèque avec des non utilisateurs Zotero
+#### Espace en ligne
 **L'applisignet** peut être un bon moyen d'associer à votre groupe des contributeurs non utilisateurs de Zotero ; la qualité des métadonnées peut toutefois être variable (voir _supra_ récupération des métadonnées à partir du DOI).
 
 Les autres possiblités d'ajout de contenu sont limitées à :
@@ -241,7 +294,7 @@ Les autres possiblités d'ajout de contenu sont limitées à :
 * l'ajout manuel : il faut alors saisir manuellement tous les champs,
 * l'ajout d'un fichier joint.
 
-### Importer des fichiers
+#### Importer des fichiers bibliographiques
 
 Un import de fichier permet d'importer rapidement un grand nombre d'éléments, organisés dans un **fichier bibliographique**, _i. e._ un fichier lisible par un logiciel de gestion bibliographique. Zotero accepte notamment les formats d'import suivants :
 
@@ -259,9 +312,9 @@ S'ils 'agit d'importer les éléments depuis la **bibliothèque d'un collègue**
 
 _Les champs non standards et propres à un logiciel ne trouveront pas forcément leur place dans un champ Zotero et pourront être importés en tant que note._
 
-#### Importer depuis le Presse-papiers
+##### Importer depuis le Presse-papiers
 
-### Exporter
+#### Exporter
 Rappel : différence entre _Exporter_ et _Créer une bibliographie_.
 
 Les exports vous permettent de fournir tout ou partie du contenu de la bibliothèque à d'autres utilisateurs dans un format exploitable informatiquement par un autre logiciel. Comme pour l'import, les formats d'export diffèrent en termes de complétude des données. Il faut donc prendre en compte ce critère lors du choix du format d'export. Les formats d'export les plus complets sont **Zotero RDF** et **CSV**.
@@ -279,10 +332,10 @@ Les exports vous permettent de fournir tout ou partie du contenu de la biblioth�
 
 Source : Discussion du forum Zotero [Export collection in CSV format - how to get rid of superfluous columns](https://forums.zotero.org/discussion/comment/205188/)
 
-# 8. Exploiter la bibliothèque de groupe pour la rédaction collaborative d'un document
+## 8. Exploiter la bibliothèque de groupe pour la rédaction collaborative d'un document
 
-## Traitement de texte
-### Lien document Word/bibliothèque Zotero
+### Traitement de texte
+#### Lien document Word/bibliothèque Zotero
 Les éléments cités sont liés à la bibliothèque de laquelle ils proviennent.
 Si vous rédigez un document collaboratif, il est donc impératif que **toutes les citations proviennent de la même bibliothèque**, et que cette bibliothèque soit **la bibliothèque de groupe**.
 
@@ -292,7 +345,7 @@ Si vous rédigez un document collaboratif, il est donc impératif que **toutes l
 
 Source : Discussion du forum Zotero [Add all references in shared Word document to shared library](https://forums.zotero.org/discussion/55957/add-all-references-in-shared-word-document-to-shared-library) - réponse d'adamsmith.
 
-### Champs ou signets?
+#### Champs ou signets?
 Les _Préférences du document_ paramétrées dans l'extension de traitement de texte Word ou OpenOffice offrent le choix entre stocker les citations en tant que **champs** ou  en tant que **signets**.
 Les **champs** n'autorisent pas l'édition du document par les utilisateurs de 2 logiciels différents (_i. e._ Word et LibreOffice).
 Si les **signets** autorisent l'édition du document par les utilisateurs de Word et LibreOffice, ils présentent 2 limites qui peuvent être importantes :
@@ -300,10 +353,10 @@ Si les **signets** autorisent l'édition du document par les utilisateurs de Wor
 * ils sont davantage source d'erreur,
 * vous ne pourrez pas utiliser un style de type _note_.
 
-# 9. Miscellannées
-## Communiquer
+## 9. Miscellannées
+### Communiquer
 
-### Non membre de votre groupe
+#### Non membre de votre groupe
 Connaissez-vous la _Copie rapide_? Elle se paramètre depuis le menu _Exportation_ des _Préférences_ de Zotero.
 
 * version _human readable_ : format par défaut = style bibliographique
@@ -317,7 +370,7 @@ La _Copie rapide_ peut être utilisée :
 
 ![zotero](img/icone_zotero.png)[Documentation Zotero : Créer des bibliographies](https://www.zotero.org/support/fr/creating_bibliographies)
 
-### Membre de votre groupe
+#### Membre de votre groupe
 Un membre de votre groupe pourra accéder à la référence depuis la bibliothèque Zotero. Vous pouvez choisir de lui envoyer un [URI](https://fr.wiktionary.org/wiki/URI), correspondant au lien :
 
 * vers l'élément Zotero dans la bibliothèque en ligne (_i. e._ affichage dans un navigateur ; le lien commence par : `http://zotero.org/`)
@@ -336,34 +389,19 @@ Pour plus de détails concernant cette fonctionnalité :
 
 adamsmith. (2013, 23 avril). Zotero Item URIs from Client. _The Zoteroist_. Repéré à https://zoteromusings.wordpress.com/2013/04/23/zotero-item-uris-from-client/
 
-## Collections récursives
-Par défaut, les collections ne sont pas récursives, _i. e._ les documents d’une sous-collection n’apparaissent pas dans la collection supérieure. Il s'agit d'un paramètre d'affichage qui peut être activé pour une bibliothèque locale, **mais non pour une bibliothèque en ligne**.
-
-Ce paramétrage fait partie des préférences cachées, accessibles depuis les _Préférences > Avancées > Editeur de configuration_ :
-
-* cherchez `extensions.zotero.recursiveCollections`,
-* indiquez la valeur `true`.
-
-Voir :
-
-* ![zotero](img/icone_zotero.png)[Documentation Zotero : Hidden preferences - EN](https://www.zotero.org/support/preferences/hidden_preferences) sur le site de Zotero
-* Discussion [Recursive display of all items of a collection and its sub-collections](https://forums.zotero.org/discussion/3317/recursive-display-of-all-items-of-a-collection-and-its-sub-collections) sur le forum Zotero
-
-![edit_config](img/edit_config.png)
-
-## Quitter un groupe
+### Quitter un groupe
 Il arrive que l'on arrête de contribuer à un projet, et il convient alors de procéder en 2 étapes pour :
 * quitter le groupe,
 * supprimer la bibliothèque de groupe de ses bibliothèques locales.
 
-### Quitter le groupe
+#### Quitter le groupe
 _NB si vous êtes propriétaire du groupe, vous devrez au préalable en transférer la propriété à un autre membre._
 
 Sur la page d'accueil du groupe sur le site Zotero, le bouton _Leave_ vous permet de quitter le groupe.
 
 ![quitter_groupe](img/quitter_groupe.png)
 
-### Supprimer les données locales
+#### Supprimer les données locales
 Pour supprimer ensuite la bibliothèque de groupe de vos bibliothèques locales, il suffit de la synchroniser (clic-droit sur la bibliothèque de groupe, puis _Synchroniser_).
 
 ![sync_bib_groupe_quitter](img/sync_bib_groupe_quitter.png)
